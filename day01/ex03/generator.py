@@ -40,7 +40,7 @@ def generator(text: str, sep=" ", option=None) -> list:
     elif option == "unique":
         # Starting with Python 3.7, the built-in dictionary
         # is guaranteed to maintain the insertion order
-        output = dict.fromkeys(output)
+        output = list(dict.fromkeys(output))
     elif option == "ordered":
         output = sorted(output)
     elif option not in options_set and option:
