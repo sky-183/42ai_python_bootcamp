@@ -12,6 +12,7 @@
 
 from random import shuffle
 
+
 def generator(text: str, sep=" ", option=None) -> list:
     """Takes a text as input, uses the string 'sep' as a splitting parameter,
     and yields the resulting substrings.
@@ -55,6 +56,7 @@ def generator(text: str, sep=" ", option=None) -> list:
 
 
 if __name__ == "__main__":
+    """
     text = "5 4 3 0 0 1 1 2"
     print("TESTING EMPTY")
     for item in generator(text, sep=" "):
@@ -78,3 +80,5 @@ if __name__ == "__main__":
     print("\nTESTING UNIQUE")
     for item in generator(text, option="unique"):
         print(item, end=' ')
+    """
+    pass
